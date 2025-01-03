@@ -1,0 +1,56 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #333333;
+}
+
+.instructions {
+  font-size: 0.9em;
+  color: #777777;
+}
+
+.hover-box {
+  width: 150px;
+  height: 150px;
+  background-color: #007bff;
+  margin: 20px auto;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.hover-box:hover {
+  background-color: #0056b3;
+}
+
+.hover-counter {
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #333333;
+}
+
+.hover-message {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #28a745;
+  font-weight: bold;
+}

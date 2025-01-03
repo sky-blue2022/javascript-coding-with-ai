@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Container */
+.container {
+  text-align: center;
+}
+
+/* Instructions */
+.instruction {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Button Styles */
+#loading-btn {
+  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loading-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Button Text */
+.button-text {
+  visibility: visible;
+}
+
+/* Spinner */
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  visibility: hidden;
+  animation: spin 1s linear infinite;
+}
+
+#loading-btn.loading .button-text {
+  visibility: hidden;
+}
+
+#loading-btn.loading .spinner {
+  visibility: visible;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

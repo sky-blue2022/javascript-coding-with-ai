@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f4f4f4;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 10px;
+}
+
+#toolbar button {
+  background-color: #add8e6; /* Light blue color */
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#toolbar button:hover {
+  background-color: #87ceeb; /* Slightly darker light blue on hover */
+}
+
+#toolbar input[type="color"],
+#toolbar input[type="range"],
+#toolbar input[type="text"] {
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+#toolbar input[type="text"] {
+  width: 150px;
+}
+
+canvas {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+  cursor: crosshair;
+}

@@ -1,0 +1,58 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #f9f9f9;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Sortable list styles */
+.sortable-list {
+  list-style: none;
+  padding: 0;
+  width: 300px;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sortable-item {
+  padding: 10px;
+  margin: 5px;
+  background-color: #6a1b9a; /* Purple button color for distinction */
+  color: #fff;
+  border-radius: 4px;
+  cursor: move;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.sortable-item.dragging {
+  opacity: 0.5;
+}
+
+.sortable-item.over {
+  border: 2px dashed #000;
+}

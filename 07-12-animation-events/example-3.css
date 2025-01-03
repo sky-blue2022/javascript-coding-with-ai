@@ -1,0 +1,49 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f6f8;
+}
+
+/* Container */
+.container {
+  text-align: center;
+}
+
+/* Instructions */
+.instruction {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Button Styles */
+#pulsate-btn {
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#pulsate-btn:hover {
+  animation: pulsate 0.8s ease-out infinite;
+}
+
+@keyframes pulsate {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,175 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Form styles for login and signup */
+form {
+  width: 300px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+form input,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+form button {
+  background: #add8e6; /* Light blue */
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background: #87ceeb; /* Darker light blue */
+}
+
+/* Toolbar styles */
+#toolbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  background: #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+#toolbar input[type="color"] {
+  -webkit-appearance: none; /* Remove default styles */
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 0;
+}
+
+#toolbar input[type="color"]::-webkit-color-swatch {
+  border: none; /* Remove swatch border */
+  border-radius: 5px;
+}
+
+#toolbar input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0; /* Remove padding around swatch */
+}
+
+#toolbar input[type="color"]:focus {
+  outline: 2px solid #87ceeb; /* Add focus outline for better accessibility */
+}
+
+/* Toolbar buttons and inputs */
+#toolbar input[type="range"],
+#toolbar input[type="text"],
+#toolbar button {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#toolbar button {
+  background-color: #add8e6; /* Light blue for buttons */
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#toolbar button:hover {
+  background-color: #87ceeb; /* Darker light blue */
+}
+
+#toolbar #exportCanvas {
+  background-color: #add8e6; /* Green for export button */
+}
+
+#toolbar #exportCanvas:hover {
+  background-color: #87ceeb; /* Darker green for hover */
+}
+
+#toolbar a {
+  background: #555; /* Dark gray for logout button */
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+#toolbar #logoutButton {
+  background-color: #555; /* Dark gray */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#toolbar #logoutButton:hover {
+  background-color: #333; /* Darker gray on hover */
+}
+
+#toolbar a:hover {
+  background: #333;
+}
+
+/* Canvas styles */
+canvas {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50px; /* Toolbar height */
+  left: 0;
+  width: 100%;
+  height: calc(100% - 50px); /* Full height minus toolbar */
+  cursor: crosshair;
+}
+
+/* Username styles */
+#usernameDisplay {
+  margin-left: auto;
+  color: #333;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 30px;
+}

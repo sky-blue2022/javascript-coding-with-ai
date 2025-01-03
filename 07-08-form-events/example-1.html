@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="example-1.css" />
+    <title>Enhanced Form UI</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Email Validation Form</h1>
+      <p>
+        Enter a valid email address in the input field below. The system will
+        validate your email in real-time and display feedback.
+      </p>
+      <form id="emailForm">
+        <label for="email">Enter your email:</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="example@example.com"
+        />
+        <span id="emailFeedback"></span>
+        <button type="submit">Submit</button>
+      </form>
+      <p>
+        <strong>Note:</strong> The form will not be submitted if the email is
+        invalid. Please make sure the email format is correct.
+      </p>
+    </div>
+    <script src="example-1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.container {
+  text-align: center;
+}
+
+h1,
+p {
+  margin: 10px;
+}
+
+#pendulumCanvas {
+  display: block;
+  margin: 20px auto;
+  width: 400px;
+  height: 400px;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}

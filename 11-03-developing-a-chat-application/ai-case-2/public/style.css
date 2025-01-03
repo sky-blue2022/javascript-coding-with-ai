@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Chat Page */
+#chat-page {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+/* Chat Window */
+#chat-window {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: white;
+}
+
+#chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+#chat-header h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+#user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+#username-display {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-right: 20px;
+}
+
+#logout-button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#logout-button:hover {
+  background: #c0392b;
+}
+
+#chat-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+#chat-box div {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+#chat-box div:nth-child(odd) {
+  background: #ecf0f1;
+}
+
+#chat-box div:nth-child(even) {
+  background: #dff9fb;
+}
+
+/* Chat Input */
+#chat-input {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+#chat-input input {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+#send-message {
+  padding: 10px 20px;
+  background: #3498db;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#send-message:hover {
+  background: #2980b9;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Signup/Login Page */
+#signup-page,
+#login-page {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+#signup-page h2,
+#login-page h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+#signup-page input,
+#login-page input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#signup-page button,
+#login-page button {
+  padding: 10px 20px;
+  background: #3498db;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#signup-page button:hover,
+#login-page button:hover {
+  background: #2980b9;
+}
+
+#signup-page p,
+#login-page p {
+  font-size: 14px;
+}
+
+#signup-page a,
+#login-page a {
+  color: #3498db;
+  text-decoration: none;
+}

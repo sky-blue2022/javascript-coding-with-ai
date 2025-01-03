@@ -1,0 +1,60 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.quiz-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+h1 {
+  color: #333;
+}
+
+#question {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#choices {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the buttons horizontally */
+}
+
+.choice {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  width: 200px; /* Makes all buttons the same width */
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center; /* Centers the button text */
+}
+
+.choice:hover {
+  background: #0056b3;
+}
+
+#feedback {
+  margin-top: 20px;
+  font-size: 1.5rem; /* Increased font size */
+  font-weight: bold; /* Makes the text bold */
+  color: #333;
+}

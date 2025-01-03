@@ -1,0 +1,58 @@
+{
+  "categories": [
+    {
+      "categoryId": 101,
+      "categoryName": "Electronics",
+      "products": [
+        {
+          "productId": 1,
+          "productName": "Smartphone",
+          "price": 699.99,
+          "stock": 150,
+          "supplier": "TechCorp"
+        },
+        {
+          "productId": 2,
+          "productName": "Laptop",
+          "price": 1099.99,
+          "stock": 75,
+          "supplier": "Innovatech"
+        },
+        {
+          "productId": 3,
+          "productName": "Wireless Headphones",
+          "price": 199.99,
+          "stock": 200,
+          "supplier": "SoundMax"
+        }
+      ]
+    },
+    {
+      "categoryId": 102,
+      "categoryName": "Home Appliances",
+      "products": [
+        {
+          "productId": 4,
+          "productName": "Microwave Oven",
+          "price": 149.99,
+          "stock": 50,
+          "supplier": "HomeEssentials"
+        },
+        {
+          "productId": 5,
+          "productName": "Vacuum Cleaner",
+          "price": 299.99,
+          "stock": 40,
+          "supplier": "CleanSweep"
+        },
+        {
+          "productId": 6,
+          "productName": "Refrigerator",
+          "price": 799.99,
+          "stock": 30,
+          "supplier": "ChillCo"
+        }
+      ]
+    }
+  ]
+}

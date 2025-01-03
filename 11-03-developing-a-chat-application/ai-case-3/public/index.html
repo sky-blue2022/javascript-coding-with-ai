@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Chat App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="login-page">
+      <h2>Welcome Back</h2>
+      <input
+        type="text"
+        id="login-username"
+        placeholder="Enter your username"
+      />
+      <input
+        type="password"
+        id="login-password"
+        placeholder="Enter your password"
+      />
+      <button id="login-button">Login</button>
+      <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+    </div>
+
+    <script>
+      document.getElementById("login-button").addEventListener("click", () => {
+        const username = document.getElementById("login-username").value.trim();
+        const password = document.getElementById("login-password").value.trim();
+
+        if (!username || !password) {
+          alert("Both username and password are required");
+          return;
+        }
+
+        fetch("/api/login", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ username, password }),
+        })
+          .then((res) => {
+            if (!res.ok) {
+              return res.json().then((err) => {
+                throw new Error(err.error || "Login failed");
+              });
+            }
+            return res.json();
+          })
+          .then(() => {
+            localStorage.setItem("username", username);
+            window.location.href = "chat.html";
+          })
+          .catch((err) => {
+            console.error("Login error:", err);
+            alert(err.message || "Login failed");
+          });
+      });
+    </script>
+  </body>
+</html>
