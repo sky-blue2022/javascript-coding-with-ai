@@ -24,6 +24,7 @@ body {
   max-width: 400px;
   width: 90%;
   box-sizing: border-box;
+  margin-top:20px;
 }
 
 h1 {
